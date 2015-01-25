@@ -1,4 +1,4 @@
-html, body, p, h1, h2, h3, h4, h5, li, td, tr {
+html, body, p, h1, h2, h3, h4, h5, li, td, tr, a {
   color: #ffffff;
   font-family: "Lucida Console", Monaco, monospace;
 
@@ -23,6 +23,34 @@ h2 {
 p {
   font-size: 0.875em;
 }
+
+.main-nav {
+  position: absolute;
+  left: 1%;
+  top: 2%;
+  margin-left: -1px;
+  margin-top: -2px;
+}
+
+.list-unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-unstyled li {
+  float: left;
+}
+
+.list-unstyled li a {
+  display: block;
+  width: 100px;
+}
+
+.main-name {
+  font-weight: bold;
+}
+
 
 .welcome {
   width: 340px;
