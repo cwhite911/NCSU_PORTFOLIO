@@ -1,16 +1,37 @@
-body {
+html, body, p, h1, h2, h3, h4, h5, li, td, tr {
+  color: #ffffff;
+  font-family: "Lucida Console", Monaco, monospace;
+
+}
+html body {
   text-align: center;
-  color: #222;
+  background: url("/assets/images/mainbg_oil.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 0.875em;
 }
 
 .welcome {
-  width: 300px;
-  height: 510px;
+  width: 340px;
+  height: 615px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -150px;
-  margin-top: -255px;
+  margin-left: -165px;
+  margin-top: -275px;
 }
 
 a, a:visited {
