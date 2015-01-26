@@ -4,7 +4,7 @@ module.exports = /*@ngInject*/
   function skillsController($scope) {
 
     //Skills list
-    $scope.skills = ['GIS', 'Surveying', 'Frontend Web Development', 'Backend Web Development', 'Databases', 'DevOps'];
+    $scope.skills = ['GIS', 'Surveying', 'Frontend Web Development', 'Backend Web Development', 'Database Administration', 'DevOps'];
     //Init skill value
     $scope.skill = 'GIS';
 
@@ -13,7 +13,6 @@ module.exports = /*@ngInject*/
     };
 
     $scope.isActive = function (type){
-      console.log(type);
       return $scope.skill === type;
     };
 };

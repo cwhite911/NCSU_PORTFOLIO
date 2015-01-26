@@ -61,12 +61,14 @@ a, a:visited {
 
 .main {
   width: 340px;
-  height: 615px;
+  height: 150px;
   position: absolute;
   left: 50%;
   top: 50%;
   margin-left: -165px;
   margin-top: -275px;
+  /*background: rgba(195, 195, 195, 0.40);*/
+  /*background: rgba(28, 16, 1, 0.40);*/
 }
 
 /*Skills view*/
@@ -74,9 +76,9 @@ a, a:visited {
 .skills-header {
   position: fixed;
   left: 1%;
-  top: 30%;
+  top: 3%;
   margin-left: -1px;
-  margin-top: -275px;
+  /*margin-top: -275px;*/
   /*position: fixed;
   left: 90%;
   top: 1%;
@@ -89,9 +91,9 @@ a, a:visited {
   width: 340px;
   position: fixed;
   left: 1%;
-  top: 40%;
+  top: 12%;
   margin-left: -1px;
-  margin-top: -275px;
+  /*margin-top: -275px;*/
   background: rgba(195, 195, 195, 0.40);
 }
 
@@ -120,9 +122,9 @@ a, a:visited {
   height: 80%;
   width: 70%;
   position: fixed;
-  left: 34%;
-  top: 40%;
-  margin-left: -165px;
-  margin-top: -275px;
+  left: 24.5%;
+  top: 12%;
+  /*margin-left: -165px;*/
+  /*margin-top: -275px;*/
   background: rgba(28, 16, 1, 0.40);
 }
