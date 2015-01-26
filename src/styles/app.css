@@ -24,8 +24,8 @@ p {
   font-size: 0.875em;
 }
 
-.main-nav {
-  position: absolute;
+.app-nav {
+  position: fixed;
   left: 1%;
   top: 2%;
   margin-left: -1px;
@@ -47,12 +47,19 @@ p {
   width: 100px;
 }
 
-.main-name {
-  font-weight: bold;
+a, a:visited {
+  text-decoration: none;
 }
 
+/*main view*/
 
-.welcome {
+.main-name {
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+.main {
   width: 340px;
   height: 615px;
   position: absolute;
@@ -62,6 +69,60 @@ p {
   margin-top: -275px;
 }
 
-a, a:visited {
-  text-decoration: none;
+/*Skills view*/
+
+.skills-header {
+  position: fixed;
+  left: 1%;
+  top: 30%;
+  margin-left: -1px;
+  margin-top: -275px;
+  /*position: fixed;
+  left: 90%;
+  top: 1%;
+  margin-left: -10px;
+  margin-top: px;*/
+}
+
+.skills-aside {
+  height: 80%;
+  width: 340px;
+  position: fixed;
+  left: 1%;
+  top: 40%;
+  margin-left: -1px;
+  margin-top: -275px;
+  background: rgba(195, 195, 195, 0.40);
+}
+
+.skills-nav {
+
+}
+
+.skills-nav ul {
+  list-style-type: none;
+  display: inline;
+}
+
+.skills-nav ul li {
+  padding: 10px;
+}
+
+.skills-nav ul li:hover {
+  background: #5788c9;
+  cursor: pointer;
+}
+.skillsActive {
+  background: #5ea375;
+}
+
+.skills-article {
+  height: 80%;
+  width: 70%;
+  position: fixed;
+  left: 34%;
+  top: 40%;
+  margin-left: -165px;
+  margin-top: -275px;
+  background: rgba(28, 16, 1, 0.40);
 }

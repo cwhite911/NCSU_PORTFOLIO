@@ -3,11 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NCCU-MGIST Masters Portfolio</title>
+    <title>MGIST</title>
     <!--styles-->
   </head>
   <body>
+    <header>
+      <nav class="app-nav" ng-controller="mainController">
+        <ul class="list-unstyled">
+          <li><a ui-sref="main" >portfolio</a></li>
+          <li><a ui-sref="about">about</a></li>
+          <li><a ui-sref="skills" >skills</a></li>
+          <li><a ui-sref="work" >work</a></li>
+          <li><a ui-sref="education" >education</a></li>
+          <li><a ui-sref="contact" >contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
     <div ui-view></div>
+    </main>
     <!--scripts-->
   </body>
 </html>

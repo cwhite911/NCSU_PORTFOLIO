@@ -1,0 +1,19 @@
+<!--Skill -->
+  <section>
+    <header class="skills-header">
+      <h1>Skills</h1>
+    </header>
+
+    <aside class="skills-aside">
+      <nav class="skills-nav">
+        <ul>
+          <li ng-repeat="skill in skills" ng-class="{skillsActive: isActive(skill)}" ng-click="setSkill(skill)">{{skill}}</li>
+        </ul>
+      </nav>
+    </aside>
+    <article class="skills-article">
+      <h2>{{skill}}</h2>
+      <table>
+      </table>
+    </article>
+  </section>
