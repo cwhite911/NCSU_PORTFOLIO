@@ -13,6 +13,7 @@ module.exports =
     require('../common').name,
     //example app module:
     require('./main').name,
+    require('./about').name,
     require('./skills').name,
     //load extra app modules here, e.g.:
     //require('./frontend').name,

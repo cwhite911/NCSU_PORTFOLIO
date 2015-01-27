@@ -24,6 +24,12 @@ p {
   font-size: 0.875em;
 }
 
+.img-circle {
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+}
+
 .app-nav {
   position: fixed;
   left: 1%;
@@ -71,10 +77,37 @@ a, a:visited {
   /*background: rgba(28, 16, 1, 0.40);*/
 }
 
+/*About view*/
+.about-header {
+  position: fixed;
+  left: 90%;
+  top: 0%;
+  margin-left: -1px;
+  font-weight: bold;
+  /*margin-top: -275px;*/
+  /*position: fixed;
+  left: 90%;
+  top: 1%;
+  margin-left: -10px;
+  margin-top: px;*/
+}
+
+.about-article {
+  height: 80%;
+  width: 90%;
+  position: fixed;
+  left: 5%;
+  top: 12%;
+  /*margin-left: -165px;*/
+  /*margin-top: -275px;*/
+  background: rgba(28, 16, 1, 0.40);
+}
+
 /*Skills view*/
 
 .skills-header {
   position: fixed;
+  font-weight: bold;
   left: 1%;
   top: 3%;
   margin-left: -1px;
