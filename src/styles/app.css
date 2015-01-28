@@ -91,6 +91,7 @@ a, a:visited {
   height: 80%;
   width: 90%;
   position: fixed;
+
   left: 5%;
   top: 12%;
   /*margin-left: -165px;*/
@@ -115,10 +116,23 @@ a, a:visited {
   height: 100%;
   left: 0%;
   top: 0%;
+  float: left;
+  /*display: inline-block;*/
   /*border: 2px solid red;*/
   background:   url("/assets/images/profile.jpg")no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.about-text {
+  position: relative;
+  /*display: inline-block;*/
+  float: right;
+  width: 66.5%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  /*border: 2px solid red;*/
 }
 
 /*Skills view*/
