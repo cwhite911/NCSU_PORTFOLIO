@@ -24,11 +24,6 @@ p {
   font-size: 0.875em;
 }
 
-.img-circle {
-    height: 140px;
-    width: 140px;
-    border-radius: 100px;
-}
 
 .app-nav {
   position: fixed;
@@ -103,14 +98,44 @@ a, a:visited {
   background: rgba(28, 16, 1, 0.40);
 }
 
+/*.img-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.img-square {
+  position: relative;
+  width: 50%;
+}*/
+
+.about-image {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  /*border: 2px solid red;*/
+  background:   url("/assets/images/profile.jpg")no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*Skills view*/
 
 .skills-header {
-  position: fixed;
+  /*position: fixed;
   font-weight: bold;
   left: 1%;
   top: 3%;
+  margin-left: -1px;*/
+
+  position: fixed;
+  left: 88%;
+  top: 0%;
   margin-left: -1px;
+  font-weight: bold;
+
   /*margin-top: -275px;*/
   /*position: fixed;
   left: 90%;
