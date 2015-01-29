@@ -135,6 +135,10 @@ a, a:visited {
   /*border: 2px solid red;*/
 }
 
+.about-text-container {
+  padding: 30px 50px;
+}
+
 /*Skills view*/
 
 .skills-header {
