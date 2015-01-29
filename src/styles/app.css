@@ -173,7 +173,7 @@ a, a:visited {
 
 .skills-aside {
   height: 80%;
-  width: 340px;
+  width: 20%;
   position: fixed;
   left: 1%;
   top: 12%;
@@ -207,7 +207,7 @@ a, a:visited {
   height: 80%;
   width: 70%;
   position: fixed;
-  left: 24.5%;
+  left: 25.5%;
   top: 12%;
   /*margin-left: -165px;*/
   /*margin-top: -275px;*/
