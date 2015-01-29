@@ -136,7 +136,16 @@ a, a:visited {
 }
 
 .about-text-container {
-  padding: 30px 50px;
+  padding: 55px 110px;
+  text-align: justify;
+}
+
+.twitter-icon {
+  width: 32px;
+}
+
+.twitter-text {
+  font-size: 32px;
 }
 
 /*Skills view*/
