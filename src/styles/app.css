@@ -136,15 +136,21 @@ a, a:visited {
 }
 
 .about-text-container {
+  /*position: relative;*/
+  width: 75%;
+  height: 65%;
   padding: 55px 110px;
   text-align: justify;
+  margin-bottom: 10px;
 }
 
 .twitter-icon {
+  margin-top: 10px;
   width: 32px;
 }
 
 .twitter-text {
+  margin-top: 10px;
   font-size: 32px;
 }
 
