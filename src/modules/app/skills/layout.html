@@ -7,21 +7,22 @@
     <aside class="skills-aside">
       <nav class="skills-nav">
         <ul>
-          <li ng-repeat="skill in skills" ng-class="{skillsActive: isActive(skill)}" ng-click="setSkill(skill)">{{skill}}</li>
+          <li ng-repeat="skill in skills" ng-class="{skillsActive: isActive(skill.name)}" ng-click="setSkill(skill)">{{skill.name}}</li>
         </ul>
       </nav>
     </aside>
     <article class="skills-article">
-      <h2>{{skill}}</h2>
-      <!-- <table>
-        <thead>
-          <th>Test</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Hello</td>
-          </tr>
-        </tbody>
-      </table> -->
+      <div class="container">
+        <h2>{{skill.name}}</h2>
+        <div class="row" ng-repeat="item in skill.images">
+          <div class="col-md-4">
+            <h5>{{item.text}}</h5>
+            <img class="skills-img" ng-src="{{item.image}}" alt="least cost path"/>
+          </div>
+          <div class="col-md-8">
+            <h4>{{skill.description}}</h4>
+          </div>
+        </div>
+      </div>
     </article>
   </section>

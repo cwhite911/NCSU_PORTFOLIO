@@ -220,6 +220,11 @@ a, a:visited {
   background: rgba(28, 16, 1, 0.40);
 }
 
+.skills-img{
+  height: 500px;
+  width: 450px;
+}
+
 .edu-heading{
   margin-top: 100px;
 }
