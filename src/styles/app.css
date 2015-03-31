@@ -219,3 +219,14 @@ a, a:visited {
   /*margin-top: -275px;*/
   background: rgba(28, 16, 1, 0.40);
 }
+
+.edu-heading{
+  margin-top: 100px;
+}
+
+.edu-article{
+  background: rgba(28, 16, 1, 0.40);
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px 30px;
+}

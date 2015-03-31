@@ -1,12 +1,12 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-  function skillsController($scope) {
+  function contactController($scope) {
 
     //Skills list
-    $scope.skills = ['Desktop GIS', 'Surveying', 'Frontend Web Development', 'Backend Web Development', 'Database Administration', 'DevOps'];
+    $scope.skills = ['GIS', 'Surveying', 'Frontend Web Development', 'Backend Web Development', 'Database Administration', 'DevOps'];
     //Init skill value
-    $scope.skill = 'Desktop GIS';
+    $scope.skill = 'GIS';
 
     $scope.setSkill = function (type){
       $scope.skill = type;

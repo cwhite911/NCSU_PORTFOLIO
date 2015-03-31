@@ -17,6 +17,7 @@ module.exports =
     require('./skills').name,
     require('./work').name,
     require('./education').name,
+    require('./contact').name,
     //load extra app modules here, e.g.:
     //require('./frontend').name,
     //require('./admin').name
