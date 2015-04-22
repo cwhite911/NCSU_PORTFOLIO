@@ -215,14 +215,20 @@ a, a:visited {
   position: fixed;
   left: 25.5%;
   top: 12%;
+  overflow-x: auto;
   /*margin-left: -165px;*/
   /*margin-top: -275px;*/
   background: rgba(28, 16, 1, 0.40);
 }
 
+.skills-desc{
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px #fff solid;
+}
 .skills-img{
-  height: 500px;
-  width: 450px;
+  height: auto;
+  width: 500px;
 }
 
 .edu-heading{
