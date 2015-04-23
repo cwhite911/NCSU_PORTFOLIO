@@ -16,6 +16,9 @@ h1 {
 h2 {
   font-size: 1.875em;
 }
+h4 {
+  line-height: 150%;
+}
 
 p {
   font-size: 0.875em;
@@ -116,7 +119,7 @@ a, a:visited {
   float: left;
   /*display: inline-block;*/
   /*border: 2px solid red;*/
-  background:   url("/assets/images/profile.jpg")no-repeat;
+  background: url("/assets/images/profile.jpg")no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -139,6 +142,7 @@ a, a:visited {
   padding: 55px 110px;
   text-align: justify;
   margin-bottom: 10px;
+  line-height: 150%;
 }
 
 .twitter-icon {
@@ -213,15 +217,15 @@ a, a:visited {
   left: 25.5%;
   top: 12%;
   overflow-x: auto;
-  /*margin-left: -165px;*/
-  /*margin-top: -275px;*/
   background: rgba(28, 16, 1, 0.40);
 }
 
 .skills-desc{
   padding-bottom: 15px;
-  margin-bottom: 20px;
   border-bottom: 1px #fff solid;
+  width: 75%;
+  margin: 0 auto 25px auto;
+  line-height: 150%;
 }
 .skills-img{
   height: auto;

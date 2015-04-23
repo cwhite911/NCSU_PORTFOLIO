@@ -35,11 +35,11 @@ module.exports = /*@ngInject*/
       },
       {
         name: 'Backend Web Development',
-        description: ''
+        description: 'I have built APIs for both work and school. Node.js is my backend development language of choice because I enjony working in an end to end JavaScript environment that is fast and easy to deploy. However, I have experince in developing python backend scripts as well including writing geoprocessing tools to extend ArcGIS Server.'
       },
       {
         name: 'Database Administration',
-        description: '',
+        description: 'At the City of Raleigh I administrate all Public Utilities feature classes, feature datasets and tables within ArcSDE using a direct connection to an Orcale backend, but prefer to work with either Postgresql or MongoDB. Both are very powerful tools which have unique use cases, in Plott I use MongoDB because of its ease of use with while developing web applications.',
       },
       {
         name: 'DevOps',
