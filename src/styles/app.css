@@ -5,7 +5,7 @@ html, body, p, h1, h2, h3, h4, h5, li, td, tr, a {
 }
 html body {
   text-align: center;
-  background: url("/assets/images/mainbg_oil.png") no-repeat center center fixed;
+  background: url("./assets/images/mainbg_oil.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
