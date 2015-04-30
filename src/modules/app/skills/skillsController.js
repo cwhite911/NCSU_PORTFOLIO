@@ -6,7 +6,7 @@ module.exports = /*@ngInject*/
     //Skills list
     $scope.skills = [{
         name:'Desktop GIS',
-        description: 'Throughout both my educational and professional career I have mostly used Esri products in the GIS desktop setting, but also use GRASS, QGIS and other open source desktop tools on various projects at NCSU and at work. My first job in GIS involved digitizing all of the sidewalks in Asheville, NC and that quickly led to creating other large datasets from scratch for the city. By creating these datasets and form classes at NC State I have developed a strong understanding of how to produce quality data for large projects. These roles led me to a position where I know design programs to automate and increase efficancy for these types of processes. ',
+        description: 'Throughout both my educational and professional career I have mostly used Esri products in the GIS desktop setting, but also use GRASS, QGIS and other open source desktop tools on various projects at NCSU and at work. My first job in GIS involved digitizing all of the sidewalks in Asheville, NC and that quickly led to creating other large datasets from scratch for the city. By creating these datasets and from classes at NC State I have developed a strong understanding of how to produce quality data for large projects. These roles led me to a position where I now design programs to automate and increase efficancy for these types of processes. In addition to GIS data entry I have also done various types of geospatial anaysis. One of the more interesting projects I worked on at NCSU involved identifying gas pockets in sewer sanitary systems force mains using geomorphons with GRASS.',
         images: [
           {
             text: 'Least Cost Path Analysis',
