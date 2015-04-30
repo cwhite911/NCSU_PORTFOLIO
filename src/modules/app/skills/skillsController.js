@@ -10,7 +10,7 @@ module.exports = /*@ngInject*/
         images: [
           {
             text: 'Least Cost Path Analysis',
-            image: '/assets/images/gisdesk1.png'
+            image: './assets/images/gisdesk1.png'
           }
         ]
       },
@@ -20,11 +20,11 @@ module.exports = /*@ngInject*/
         images: [
           {
             text: 'Plott Coverage Map',
-            image: '/assets/images/demo.PNG'
+            image: './assets/images/demo.PNG'
           },
           {
             text: 'Hydrant Inspections Dashboard - \nDesigned to provide real-time statistics to fire station cheif about hydrants inspection efforts.',
-            image: '/assets/images/hydrantAppMap.PNG'
+            image: './assets/images/hydrantAppMap.PNG'
           }
         ]
       },
