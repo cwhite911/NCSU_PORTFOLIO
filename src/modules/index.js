@@ -5,5 +5,6 @@ require('angular');
   require('angular-animate');
   require('angular-ui-bootstrap');
   require('angular-ui-router');
+
 //app entry point
 require('./app');

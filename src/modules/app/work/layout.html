@@ -1,27 +1,33 @@
 <!--Skill -->
   <section>
     <header class="skills-header">
-      <h1>skills</h1>
+      <h1>work</h1>
     </header>
-
-    <aside class="skills-aside">
-      <nav class="skills-nav">
-        <ul>
-          <li ng-repeat="skill in skills" ng-class="{skillsActive: isActive(skill)}" ng-click="setSkill(skill)">{{skill}}</li>
-        </ul>
-      </nav>
-    </aside>
-    <article class="skills-article">
-      <h2>{{skill}}</h2>
-      <!-- <table>
-        <thead>
-          <th>Test</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Hello</td>
-          </tr>
-        </tbody>
-      </table> -->
-    </article>
-  </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-md-offset-6">
+          <h2 class="edu-heading">City of Raleigh, NC (January 2014 - Present)</h2>
+          <div class="edu-article">
+            <div class="edu-right">
+              <h4>I'm currently enrolled in the Masters of Geospatial Information Science and Technology and will be earning my degree in December 2015.</h4>
+            </div>
+            <div class="edu-left">
+              <img src="./assets/images/raleigh.gif" alt="North Carolina State University" class="img-thumbnail edu-logo"/>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-6">
+          <h2 class="edu-heading">City of Asheville, NC (June 2010- August 2013)</h2>
+          <div class="edu-article">
+            <div class="edu-right">
+              <h4>I graduated from Warren Wilson College in 2006 with a degree in anthroplogy/archaeology and a minor in applied geospatial technology. At Warren Wilson I also worked on the GIS work crew where I ran the schools GIS computer lab and assisted students, faculty and staff in research projects.</h4>
+            </div>
+            <div class="edu-left">
+              <img src="./assets/images/asheville.png" alt="City of Asheville" class="img-thumbnail edu-logo"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
