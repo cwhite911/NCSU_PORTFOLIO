@@ -6,12 +6,6 @@ module.exports = /*@ngInject*/
     //Skills list
     $scope.skills = [{
         name:'Desktop GIS',
-        images: [
-          {
-            text: 'Least Cost Path Analysis',
-            image: './assets/images/gisdesk1.png'
-          }
-        ]
       },
       {
         name: 'Frontend Web Development',
@@ -21,10 +15,6 @@ module.exports = /*@ngInject*/
       },
       {
         name: 'Database Administration'
-      },
-      {
-        name: 'DevOps',
-        description: ''
       }];
 
     //Init skill value
