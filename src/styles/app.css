@@ -27,7 +27,9 @@ p {
   font-size: 0.875em;
 }
 
-
+.work-head{
+  text-decoration: underline;
+}
 .app-nav {
   position: fixed;
   left: 1%;
@@ -268,4 +270,9 @@ a, a:visited {
   display: block;
   float: right;
   width: 80%;
+}
+
+.work-list li{
+  margin-bottom: 10px;
+  text-align: left;
 }
