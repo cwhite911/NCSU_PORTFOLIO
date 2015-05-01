@@ -15,16 +15,6 @@ module.exports = /*@ngInject*/
       },
       {
         name: 'Frontend Web Development',
-        images: [
-          {
-            text: 'Plott Coverage Map',
-            image: './assets/images/demo.PNG'
-          },
-          {
-            text: 'Hydrant Inspections Dashboard - \nDesigned to provide real-time statistics to fire station cheif about hydrants inspection efforts.',
-            image: './assets/images/hydrantAppMap.PNG'
-          }
-        ]
       },
       {
         name: 'Backend Web Development'
@@ -76,10 +66,7 @@ module.exports = /*@ngInject*/
 
 
    var cemeterymap = L.map('cemeterymap').setView([35.600251, -82.570848], 17.5);
-   L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-i875mjb7/{z}/{x}/{y}.png', {
-     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-     maxZoom: 18
- }).addTo(cemeterymap);
+
  //Adding WMS layers from geoserver
  L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
      layers: 'coa_cemetery_graves',
