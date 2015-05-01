@@ -4,14 +4,14 @@
       <h1>skills</h1>
     </header>
 
-    <aside class="skills-aside">
+    <aside class="skills-aside animated flip">
       <nav class="skills-nav">
         <ul>
           <li ng-repeat="skill in skills" ng-class="{skillsActive: isActive(skill.name)}" ng-click="setSkill(skill)">{{skill.name}}</li>
         </ul>
       </nav>
     </aside>
-    <article class="skills-article">
+    <article class="skills-article animated fadeIn zoomIn">
       <div class="container">
         <h2>{{skill.name}}</h2>
         <div class="row">
