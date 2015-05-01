@@ -19,6 +19,7 @@ module.exports =
     require('./work').name,
     require('./education').name,
     require('./contact').name,
+    require('./reflection').name
     //load extra app modules here, e.g.:
     //require('./frontend').name,
     //require('./admin').name
