@@ -248,6 +248,11 @@ a, a:visited {
   width: 500px;
 }
 
+.skills-img-hyd{
+  height: auto;
+  width: 80%;
+}
+
 .edu-heading{
   margin-top: 100px;
 }
