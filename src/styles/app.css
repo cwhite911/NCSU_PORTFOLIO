@@ -162,6 +162,18 @@ a, a:visited {
 
 /*Skills view*/
 
+#sidewalkmap {
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  }
+
+  #cemeterymap {
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    }
+
 .skills-header {
   /*position: fixed;
   font-weight: bold;

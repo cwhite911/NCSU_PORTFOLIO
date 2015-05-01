@@ -1,6 +1,6 @@
 <!--Skill -->
   <section>
-    <header class="skills-header">
+    <header class="skills-header animated rollIn">
       <h1>skills</h1>
     </header>
 
@@ -13,16 +13,98 @@
     </aside>
     <article class="skills-article animated fadeIn zoomIn">
       <div class="container">
-        <h2>{{skill.name}}</h2>
+        <div ng-if="skill.name === 'Desktop GIS'">
+        <h2 id="desktop-gis">{{skill.name}}</h2>
         <div class="row">
           <div class="col-md-8">
-            <h4 class="skills-desc">{{skill.description}}</h4>
+            <h4 class="skills-desc">Throughout both my educational and professional career I have mostly used Esri products in the GIS desktop setting, but also use GRASS,
+               QGIS and other open source desktop tools on various projects at NCSU and at work. My first job in GIS involved digitizing all of the sidewalks in Asheville,
+                NC and that quickly led to creating other large datasets from scratch for the city.</h4>
+
+                <h5>Sidewalk layer developed for the city of Asheville</h5>
+                <div id="sidewalkmap"></div>
+
+
+                <h4>Another dataset I created for the City of Asheville was Riverside Cemetery. The cemetery dataset included the feature classes sections, lots and graves,
+                   and a raster mosaic of the cemetery from picture take from a helium ballon.</h4>
+                   <h5>Riverside Cemetery layers</h5>
+                   <div id="cemeterymap"></div>
+
+                <h4> By creating these datasets and from classes at NC State I have developed
+                 a strong understanding of how to produce quality data for large projects. These roles led me to a position where I now design programs to automate and
+                  increase efficancy for these types of processes. In addition to GIS data entry I have also done various types of geospatial anaysis. One of the more interesting
+                   projects I worked on at NCSU involved identifying gas pockets in sewer sanitary systems force mains using geomorphons with GRASS.</h4>
           </div>
-          <div class="col-md-4" ng-repeat="item in skill.images">
-            <img class="skills-img" ng-src="{{item.image}}" alt="image"/>
-            <h5>{{item.text}}</h5>
+          <div class="col-md-4">
+            <img class="skills-img" ng-src="./assets/images/gisdesk1.png" alt="image"/>
+            <h5>Least Cost Path Analysis</h5>
           </div>
         </div>
       </div>
+
+      <div ng-if="skill.name === 'Frontend Web Development'">
+        <h2 id="frontend">{{skill.name}}</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="skills-desc">As a web developer I have many project that bring together traditional GIS and the web. I use resourse both open and closed sourced,
+               but I prefer to use open-source tools where applicable. Currently my go to JavaScript stack is Angularjs and my prefered mapping library leafletjs.
+                During my time at NCSU I developed many applications that bring GIS design and development to the web. However Plott, my masters project, is an indoor
+                 position system I developed to provide an open-source option for developers and is my best technical work I have done even though it is not 100% complete.</h4>
+          </div>
+          <div class="col-md-4">
+            <img class="skills-img" ng-src="{{item.image}}" alt="image"/>
+            <h5></h5>
+          </div>
+        </div>
+      </div>
+
+      <div ng-if="skill.name === 'Backend Web Development'">
+        <h2 id="frontend">{{skill.name}}</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="skills-desc">I have built APIs for both work and school. Node.js is my backend development language of choice because I enjony working
+               in an end to end JavaScript environment that is fast and easy to deploy. However, I have experince in developing python backend scripts as well
+                including writing geoprocessing tools to extend ArcGIS Server.</h4>
+          </div>
+          <div class="col-md-4">
+            <img class="skills-img" ng-src="" alt="image"/>
+            <h5></h5>
+          </div>
+        </div>
+      </div>
+
+      <div ng-if="skill.name === 'Database Administration'">
+        <h2 id="frontend">{{skill.name}}</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="skills-desc">At the City of Raleigh I administrate all Public Utilities feature classes, feature datasets and tables within ArcSDE using
+               a direct connection to an Orcale backend, but prefer to work with either Postgresql or MongoDB. Both are very powerful tools which have unique use cases,
+                in Plott I use MongoDB because of its ease of use with while developing web applications.</h4>
+          </div>
+          <div class="col-md-4">
+            <img class="skills-img" ng-src="" alt="image"/>
+            <h5></h5>
+          </div>
+        </div>
+      </div>
+
+      <div ng-if="skill.name === 'DevOps'">
+        <h2 id="frontend">{{skill.name}}</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="skills-desc">As a web developer I have many project that bring together traditional GIS and the web. I use resourse both open and closed sourced,
+               but I prefer to use open-source tools where applicable. Currently my go to JavaScript stack is Angularjs and my prefered mapping library leafletjs.
+                During my time at NCSU I developed many applications that bring GIS design and development to the web. However Plott, my masters project, is an indoor
+                 position system I developed to provide an open-source option for developers and is my best technical work I have done even though it is not 100% complete.</h4>
+          </div>
+          <div class="col-md-4">
+            <img class="skills-img" ng-src="" alt="image"/>
+            <h5></h5>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
     </article>
   </section>

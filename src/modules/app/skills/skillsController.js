@@ -1,12 +1,11 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-  function skillsController($scope) {
+  function skillsController($scope, $anchorScroll, $location) {
 
     //Skills list
     $scope.skills = [{
         name:'Desktop GIS',
-        description: 'Throughout both my educational and professional career I have mostly used Esri products in the GIS desktop setting, but also use GRASS, QGIS and other open source desktop tools on various projects at NCSU and at work. My first job in GIS involved digitizing all of the sidewalks in Asheville, NC and that quickly led to creating other large datasets from scratch for the city. By creating these datasets and from classes at NC State I have developed a strong understanding of how to produce quality data for large projects. These roles led me to a position where I now design programs to automate and increase efficancy for these types of processes. In addition to GIS data entry I have also done various types of geospatial anaysis. One of the more interesting projects I worked on at NCSU involved identifying gas pockets in sewer sanitary systems force mains using geomorphons with GRASS.',
         images: [
           {
             text: 'Least Cost Path Analysis',
@@ -16,7 +15,6 @@ module.exports = /*@ngInject*/
       },
       {
         name: 'Frontend Web Development',
-        description: 'As a web developer I have many project that bring together traditional GIS and the web. I use resourse both open and closed sourced, but I prefer to use open-source tools where applicable. Currently my go to JavaScript stack is Angularjs and my prefered mapping library leafletjs. During my time at NCSU I developed many applications that bring GIS design and development to the web. However Plott, my masters project, is an indoor position system I developed to provide an open-source option for developers and is my best technical work I have done even though it is not 100% complete.',
         images: [
           {
             text: 'Plott Coverage Map',
@@ -29,12 +27,10 @@ module.exports = /*@ngInject*/
         ]
       },
       {
-        name: 'Backend Web Development',
-        description: 'I have built APIs for both work and school. Node.js is my backend development language of choice because I enjony working in an end to end JavaScript environment that is fast and easy to deploy. However, I have experince in developing python backend scripts as well including writing geoprocessing tools to extend ArcGIS Server.'
+        name: 'Backend Web Development'
       },
       {
-        name: 'Database Administration',
-        description: 'At the City of Raleigh I administrate all Public Utilities feature classes, feature datasets and tables within ArcSDE using a direct connection to an Orcale backend, but prefer to work with either Postgresql or MongoDB. Both are very powerful tools which have unique use cases, in Plott I use MongoDB because of its ease of use with while developing web applications.',
+        name: 'Database Administration'
       },
       {
         name: 'DevOps',
@@ -46,9 +42,82 @@ module.exports = /*@ngInject*/
 
     $scope.setSkill = function (type){
       $scope.skill = type;
+      if ($location.hash() !== type) {
+        // set the $location.hash to `newHash` and
+        // $anchorScroll will automatically scroll to it
+        $location.hash(type);
+      } else {
+        // call $anchorScroll() explicitly,
+        // since $location.hash hasn't changed
+        $anchorScroll();
+      }
     };
 
     $scope.isActive = function (type){
       return $scope.skill.name === type;
     };
+    angular.element(document).ready(function () {
+
+
+    var sidewalkmap = L.map('sidewalkmap').setView([35.600251, -82.570848], 12);
+    L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-i875mjb7/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      maxZoom: 18
+  }).addTo(sidewalkmap);
+    var sidewalk = L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
+      layers: 'coa_sidewalks',
+      format: 'image/png',
+      maxZoom: 25,
+      transparent: true,
+      zIndex: 3,
+      attribution: '<a href="ashevillenc.gov" >City of Asheville</a>'
+
+   }).addTo(sidewalkmap);
+
+
+   var cemeterymap = L.map('cemeterymap').setView([35.600251, -82.570848], 17.5);
+   L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-i875mjb7/{z}/{x}/{y}.png', {
+     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+     maxZoom: 18
+ }).addTo(cemeterymap);
+ //Adding WMS layers from geoserver
+ var lots = L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
+     layers: 'coa_cemetery_graves',
+     format: 'image/png',
+     maxZoom: 25,
+     transparent: true,
+     zIndex: 5
+
+  }).addTo(cemeterymap);
+var lots = L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
+    layers: 'coa_cemetery_lots',
+    format: 'image/png',
+    maxZoom: 25,
+    transparent: true,
+    zIndex: 4
+
+ }).addTo(cemeterymap);
+
+var sectoins = L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
+    layers: 'coa_cemetery_sections',
+    format: 'image/png',
+    maxZoom: 25,
+    transparent: true,
+    zIndex: 3,
+    attribution: '<a href="ashevillenc.gov" >City of Asheville</a>'
+
+ }).addTo(cemeterymap);
+
+var balloon = L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
+    layers: 'topp:RiversideCemeteryBallonImage',
+    format: 'image/png',
+    maxZoom: 25,
+    transparent: false,
+    zIndex: 1
+
+ }).addTo(cemeterymap);
+
+
+
+ });
 };
