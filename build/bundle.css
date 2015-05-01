@@ -292,3 +292,9 @@ a, a:visited {
   height: 200px;
   width: 200px;
 }
+
+#plottmap{
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+}

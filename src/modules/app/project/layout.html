@@ -3,17 +3,31 @@
 </header>
 <div class="container">
   <div class="row">
-    <div class="col-md-2 col-md-offset-6 animated fadeInLeftBig">
+    <div class="col-md-2 col-md-offset-6 animated zoomIn fadeIn">
       <h1 class="edu-heading"><a href="https://github.com/cwhite911/Plott"><img src="./assets/images/plott.png" alt="Plott" class="img-thumbnail plott"/></a></h1>
       <div class="edu-article">
         <div >
-          <h3>Background</h3>
+          <h2>Background</h2>
           <h4>Plott is an open-source project working to create a highly accurate indoor positioning system using WiFi fingerprinting.
             The goal of Plott is to create an API that is capable of tracking a targeted device within 1 foot of its actual location and
             easily integrate with existing JavaScript web mapping libraries via GeoJson. In addition to the technical goals of Plott, the
             project is being developed to work with the client Sue McKinney of Dog Fun Forever in Durham, NC to preform geospatial analysis
             on K9 Nose Work training techniques. The goal of the study is to determine if trained dogs are able to identify odor (birch oil)
             more efficiently than untrained dogs.</h4>
+
+        <h2>Problem</h2>
+        <h4>Plott is a WiFi indoor positioning system (IPS) that is currently in development. The goal of the Plott project is to create an IPS with
+           1 foot accuracy that can track targeted devices and be controlled though a web application. The problem faced during this development was
+            identifying a methodology that can produce accurate enough results, so that the system can perform the study on K9 Nose Work training techniques.</h4>
+
+            <h2>Results</h2>
+            <h4>Plott is currently a working indoor positioning system that can track a device within 2-3ft on average using the WiFi fingerprinting method.
+               However, these results are dependent on the amount and quality of samples taken to generate the WiFi coverage map. Also, more testing is needed
+                before a recommendation can be made on the best amount of samples for a given space. WiFi trilateration currently has an accuracy of ±100ft.
+                 However, Plott did not achieve the desired goal of 1ft accuracy that was determined to continue into the K9 Nose Work portion of this study.</h4>
+
+          <h5>Example Floor Plan</h5>
+          <div id="plottmap"></div>
         </div>
         <div >
 
