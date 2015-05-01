@@ -170,7 +170,9 @@ a, a:visited {
     width: 80%;
     margin: 0 auto;
     }
-
+.skills-link{
+  color: #a1ccf9;
+}
 .skills-header {
   /*position: fixed;
   font-weight: bold;
@@ -284,4 +286,9 @@ a, a:visited {
 .work-list li{
   margin-bottom: 10px;
   text-align: left;
+}
+
+.plott{
+  height: 200px;
+  width: 200px;
 }

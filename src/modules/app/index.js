@@ -14,6 +14,7 @@ module.exports =
     //example app module:
     require('./main').name,
     require('./about').name,
+    require('./project').name,
     require('./skills').name,
     require('./work').name,
     require('./education').name,

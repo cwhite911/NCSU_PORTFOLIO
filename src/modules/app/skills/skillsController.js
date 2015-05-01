@@ -81,7 +81,7 @@ module.exports = /*@ngInject*/
      maxZoom: 18
  }).addTo(cemeterymap);
  //Adding WMS layers from geoserver
- var lots = L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
+ L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
      layers: 'coa_cemetery_graves',
      format: 'image/png',
      maxZoom: 25,
@@ -89,7 +89,7 @@ module.exports = /*@ngInject*/
      zIndex: 5
 
   }).addTo(cemeterymap);
-var lots = L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
+L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
     layers: 'coa_cemetery_lots',
     format: 'image/png',
     maxZoom: 25,
@@ -98,7 +98,7 @@ var lots = L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/w
 
  }).addTo(cemeterymap);
 
-var sectoins = L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
+L.tileLayer.wms("http://opendataserver.ashevillenc.gov:80/geoserver/wms", {
     layers: 'coa_cemetery_sections',
     format: 'image/png',
     maxZoom: 25,
