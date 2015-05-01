@@ -8,7 +8,6 @@ module.exports =
     .state('contact', {
       url: '/contact',
       templateUrl: 'app/contact/layout.html',
-      controller: 'contactController'
+
     });
-  })
-  .controller('contactController', require('./contactController'));
+  });
